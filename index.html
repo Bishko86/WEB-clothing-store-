@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+	<!-- <script type="text/javascript" src="dataList.js"></script> -->
+</head>
+<body>	
+	<!-- block modal window -->
+	<div class="modal">
+		<div class="parent-block">
+			<div class="back-color" style="text-align: center;">
+				<h1 class="title_prod"> item</h1>
+				<span id="close"><i class="fa fa-times" aria-hidden="true"></i>
+				</span>
+			</div>
+			<div class="flex-row">
+				<img class="img" height="140" alt="img">
+				<div class="prod-info">
+						
+				</div>		
+			</div>
+			<div class="btn-modal">
+				<input type="button" class="back mod-input" value="Buy now">
+				<input type="button" class="toBasket  mod-input" value="Add to basket">
+			</div>
+		</div>
+	</div>
+	<!-- confirm window -->
+	<div class="confirm">
+		<div class="head-conf">
+		<p class="namOfItem"></p>
+		<span id="close"><i class="fa fa-times" aria-hidden="true"></i></span></div> </br>
+		<img src="images/unnamed.jpg" alt="full-basket" height="150"> </br>
+		<div class="space-evenly">
+		<input class="shopping" type="button" value="Continue shopping">
+		<input class="goToBask" type="button" value="Go to basket">
+		</div>
+	</div>
+	<!-- header block -->
+	<header class="header">
+		<div class="container">
+			<div class="hdr">
+				<div class="logo" >
+					<h1 id="log">Aditii</h1>
+				</div>
+				<div class="form">
+					<form action="" class="search"> 
+						<input type="text" class="search-form" value="">
+						<a href="#" class="icon"><i class="fa fa-search" aria-hidden="true"></i></a>
+					</form>
+				</div>
+				<div class="basket">
+					<a href="basket.html" >
+					<img src="images/basket.gif" alt="basket-img" class="bskt-buy" title="Basket"></a>
+					<span class="prise-prod"></span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav class="nav">
+		<div class="container">
+			<div class="adapt-nav" id="navBat">
+				<div class="adapt-nav-basket" onclick="navBat()">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+				<h1 id="log">Aditii</h1>
+				<form action="" class="search"> 
+						<input type="text" class="search-form" value="">
+						<a href="#" class="icon"><i class="fa fa-search" aria-hidden="true"></i></a>
+					</form>
+					<div class="adapt-basket" >
+					<a href="basket.html" class="basket-page" >
+						<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+					</a>
+					<span class="price-prod"></span>
+					</div>
+				</div>
+			</div>
+	
+			<div class="navigation">
+				<a href="#" class="links border-right">Home</a>
+				<a href="#" class="links border-right" id="style-nav">Sale</a>
+				<a href="#" class="links border-right" id="style-nav">Handbags</a>
+				<a href="#" class="links border-right" id="style-nav">Wallets</a>
+				<a href="#" class="links border-right" id="style-nav">Accessories</a>
+				<a href="#" class="links border-right" id="style-nav">Mens Store</a>
+				<a href="#" class="links border-right" id="style-nav">Shoes</a>
+				<a href="#" class="links border-right" id="style-nav"> Vintage</a>
+				<a href="#" class="links border-right" id="style-nav">Servises</a>
+				<a href="#" class="links" id="style-nav">Contact Us</a>
+			</div>
+		</div>
+	</nav>
+	<nav class="drop-menu"  id="drop" >
+	<div class="dropMenu">
+				<ul class="menu">
+					<li>Home</li>
+					<li>Sale</li>
+					<li>Handbags</li>
+					<li>Wallets</li>
+					<li>Accessories</li>
+					<li>Mens Store</li>
+					<li>Shoes</li>
+					<li>Vintage</li>
+					<li>Servises</li>
+					<li>Contact Us</li>
+					<li class="awesome" id="hide"><i class="fa fa-angle-double-up " ></i></li>
+				</ul>
+			</div>
+	</nav>
+	<div class="main-face">
+		<div class="container">
+			<div class="face-page">
+				<div class="content">
+						<img src="images/t-shirt.gif" alt="t-shirt">
+				</div>
+				<div class="title-block">
+					<h1 class="title">COWHIDE </br>STANDART CREW</h1>
+					<p class="descrip">White coloured,short-sleeved,printed T-shirt for men by Levi's.
+					I his crew-neck I shirt is made of organic cotton and comes in a regular fit.</p>
+					<form action="" class="btn">
+						<input type="submit" name="button" value="SHOP NOW" class="in-btn">
+					</form>
+					<nav class="data-list">
+						<ul class="marcker">
+							<li class="point"> <a href="#"
+							class="link" id="get"></a> </li>
+							<li class="point"> <a href="#" class="link" id="get1"></a> </li>
+							<li class="point"> <a href="#" class="link" id="get2"></a> </li>
+							<li class="point"> <a href="#" class="link" id="get3"></a> </li>
+							<li class="point"> <a href="#" class="link" id="get4"></a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="slide-banner">
+	<div class="arrow-left"><img src="images/arrow-left.gif" alt="arrow-left" id="left"></div>
+	<div class="arrow-right"><img src="images/arrow-right.gif" alt="" id="right"></div>
+		<div class="container">
+			<div class="parent_block">
+			<div class="banner">
+				<div class="pos-item border-right modal-info">
+					<img src="images/shoes.gif" alt="shoes" class="product">
+					<div class="style-block-banner style_block_banner">
+						<span  class=" prod-name">BRENDED SHOES</span>
+							<button class="btn-buy1 buyBTN" value="SHOP"  id="shoesMan">SHOP</button>
+					</div>
+				</div>
+				<div class="pos-item border-right modal-info">
+						<img src="images/t-shirt1 (2).gif" alt="t-shirt" class="product">
+					<div class="style-block-banner">
+						<span  class=" prod-name">BRENDED T-SHIRTS </span>
+							<button  class="btn-buy2 buyBTN" value="SHOP" id="tShirtStrauss">SHOP</button>
+					</div>
+				</div>
+
+				<div class="pos-item border-right modal-info">
+					<img src="images/bag.gif" alt="shorts" class="product" >
+					<div class="style-block-banner">
+						<span  class=" prod-name">BRENDED BAG</span>
+							<button class="btn-buy3 buyBTN" value="SHOP" id="bag">SHOP</button>
+					</div>
+				</div>
+				<div class="pos-item border-right modal-info">
+					<img src="images/t-shirt3.gif" alt="shoes" class="product">
+					<div class="style-block-banner">
+						<span class=" prod-name">BRENDED T-SHIRT</span>
+							<button class="btn-buy4 buyBTN" value="SHOP" id="tShirtGrey">SHOP</button>
+					</div>
+				</div>
+				<div class="pos-item border-right modal-info">
+					<img src="images/wallet.gif" alt="shoes" class="product">
+					<div class="style-block-banner">
+						<span class=" prod-name">BRENDED WALLET</span>
+							<button class="btn-buy5 buyBTN" value="SHOP" id="wallet">SHOP</button>
+					</div>
+				</div>
+				<div class="pos-item border-right modal-info" >
+					<img src="images/t-shirt2.gif" alt="shoes" class="product">
+					<div class="style-block-banner">
+						<span class=" prod-name">BRENDED TEES</span>
+							<button class="btn-buy6 buyBTN" value="SHOP" id="tShirtLevis">SHOP</button>
+					</div>
+				</div>
+				<div class="pos-item border-right modal-info">
+					<img src="images/shorts.gif" alt="shoes" class="product">
+					<div class="style-block-banner" >
+						<span class=" prod-name">BRENDED SHORTS</span>
+							<button class="btn-buy7 buyBTN" value="SHOP" id="shorts">SHOP</button>
+					</div>
+				</div>
+				<div class="pos-item border-right modal-info">
+					<img src="images/women-shoes.gif" alt="shoes" class="product">
+					<div class="style-block-banner">
+						<span class=" prod-name">BRENDED WOMAN SHOES</span>
+							<button class="btn-buy8 buyBTN" value="SHOP" id="shoesWomen">SHOP</button>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section class="item_list_style">
+		<div class="blue-strip">
+			<h2 class="tit-prod">FUTURED PRODUCT</h2>
+		</div>
+		<div class="container">
+			
+			<!-- block list of products -->
+			<div class="products">
+				<div class="item modal-info">
+						<img src="images/women-shoes.gif" alt="shoes" id="size">
+						<h2 class="prod-name">BRENDED WOMAN SHOES</h2>
+						<div class="vertical-position">
+							<span class="prise-prod">$99.99</span>
+							<button class="btn-buy9 buyBTN" id="shoesWomen">BUY NOW</button>
+						</div>
+			    </div>
+				<div class="item modal-info">
+						<img src="images/t-shirt2.gif" alt="t-shirt" id="size">
+						<h2 class="prod-name">BRENDED TEES</h2>
+						<div class="vertical-position">
+							<span class="prise-prod">$300</span>
+							<button  class="btn-buy10 buyBTN" id="tShirtLevis">BUY NOW</button>
+						</div>
+			    </div>
+			    <div class="item modal-info">
+			    		<img src="images/t-shirt3.gif" alt="t-shirt" id="size">
+						<h2 class="prod-name">BRENDED T-SHIRT</h2>
+						<div class="vertical-position">
+							<span class="prise-prod">$300</span>
+							<button class="btn-buy11 buyBTN" id="tShirt">BUY NOW</button>
+						</div>
+			    </div>
+			    <div class="item modal-info">
+			    		<img src="images/wallet.gif" alt="wallet" id="size">
+						<h2 class="prod-name">BRENDED WALLET</h2>
+						<div class="vertical-position">
+							<span class="prise-prod">$300</span>
+							<button class="btn-buy12 buyBTN" id="wallet">BUY NOW</button>
+			    		</div>
+			    </div>
+			    <div class="item modal-info">
+			    		<img src="images/bag.gif" alt="bag" id="size">
+						<h2 class="prod-name">EMS WOOMEN BAG</h2>
+						<div class="vertical-position">
+							<span class="prise-prod">$300</span>
+							<button class="btn-buy13 buyBTN" id="bag">BUY NOW</button>
+			    		</div>
+			    </div>
+			    <div class="item modal-info">
+			    		<img src="images/shorts.gif" alt="shorts" id="size">
+						<h2 class="prod-name">BRENDED CARGOS</h2>
+						<div class="vertical-position">
+							<span class="prise-prod">$300</span>
+							<button class="btn-buy14 buyBTN" id="shorts">BUY NOW</button>
+			    		</div>
+			    </div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="background">
+			<div class="container">
+				<div class="foot-block">
+					<div class="foot-content">
+						<h3 class="foot-list-title">FEATURED SALE</h3>
+						<a href="" class="foot-list">Alexis Hudson</a>
+						<a href="" class="foot-list">American Apparel</a>
+						<a href="" class="foot-list">Ben Sherman</a>
+						<a href="" class="foot-list">Big Buddha</a>
+						<a href="" class="foot-list">Chanel</a>
+						<a href="" class="foot-list">Christian Audigier</a>
+						<a href="" class="foot-list">Coach</a>
+						<a href="" class="foot-list">Cole Haan</a>				
+					</div>
+					<div class="foot-content">
+						<h3 class="foot-list-title">MENS STORE</h3>
+						<a href="" class="foot-list">Alexis Hudson</a>
+						<a href="" class="foot-list">American Apparel</a>
+						<a href="" class="foot-list">Ben Sherman</a>
+						<a href="" class="foot-list">Big Buddha</a>
+						<a href="" class="foot-list">Chanel</a>
+						<a href="" class="foot-list">Christian Audigier</a>
+						<a href="" class="foot-list">Coach</a>
+						<a href="" class="foot-list">Cole Haan</a>				
+					</div>
+					<div class="foot-content">
+						<h3 class="foot-list-title">WOMAN STORE</h3>
+						<a href="" class="foot-list">Alexis Hudson</a>
+						<a href="" class="foot-list">American Apparel</a>
+						<a href="" class="foot-list">Ben Sherman</a>
+						<a href="" class="foot-list">Big Buddha</a>
+						<a href="" class="foot-list">Chanel</a>
+						<a href="" class="foot-list">Christian Audigier</a>
+						<a href="" class="foot-list">Coach</a>
+						<a href="" class="foot-list">Cole Haan</a>				
+					</div>
+					<div class="foot-content">
+						<h3 class="foot-list-title">QUICK LINKS</h3>
+						<a href="" class="foot-list">Alexis Hudson</a>
+						<a href="" class="foot-list">American Apparel</a>
+						<a href="" class="foot-list">Ben Sherman</a>
+						<a href="" class="foot-list">Big Buddha</a>
+						<a href="" class="foot-list">Chanel</a>
+						<a href="" class="foot-list">Christian Audigier</a>
+						<a href="" class="foot-list">Coach</a>
+						<a href="" class="foot-list">Cole Haan</a>				
+					</div>
+				</div>
+			</div>
+			<div class="copyright"><span class="descrip">Copyright © 2013 Css Author</span></div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="baskObj.js"></script>
+	<script src="main.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="basket.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="dataList.js"></script>
+</head>
+<body>
+	<div class="modal">
+		<div class="parent-block">
+			<div  class="back-color"style="text-align: center;">
+				<h1 class="title_prod"> item</h1>
+				<span id="close"><i class="fa fa-times" aria-hidden="true"></i>
+				</span>
+			</div>
+			<div class="flex-row">
+				<img class="img" height="140" alt="img">
+				<div class="prod-info">
+						
+				</div>		
+			</div>
+		</div>
+	</div>
+	<header class="header-basket">
+		<div class="header-basket-block">
+			
+				<div class="adapt-nav-bask" onclick="navBat()">
+
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+				<div class="logo" id="goOn">
+					<h1 id="logos">Aditii</h1>
+				</div>
+				<div class="form">
+					<form action="" class="search"> 
+						<input type="text" class="search-form" value="">
+						<a href="#" class="icon"><i class="fa fa-search" aria-hidden="true"></i></a>
+					</form>
+				</div>	
+		</div>
+	</header>
+	<nav class="drop-menu"  id="drop" >
+		<div class="dropMenu">
+				<ul class="menu">
+					<li><a href="index.html" id="back-home">Home</a></li>
+					<li>Sale</li>
+					<li>Handbags</li>
+					<li>Wallets</li>
+					<li>Accessories</li>
+					<li>Mens Store</li>
+					<li>Shoes</li>
+					<li>Vintage</li>
+					<li>Servises</li>
+					<li>Contact Us</li>
+					<li class="awesome" id="hide"><i class="fa fa-angle-double-up " ></i></li>
+				</ul>
+			</div>
+	</nav>
+	<div class="container" >
+	<section class="basket-block">
+			<div class="table-bask">
+				<table id='table'>
+					
+				</table>
+			</div>
+			
+	</section>
+</div>
+<script src="basket.js"></script>
+<script src="baskObj.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+
+</body>
+</html>
