@@ -327,8 +327,8 @@ function showConfirmBlock() {
    confirmBlok.style.display = 'block';
    let amountProd = document.querySelector('.namOfItem');
    amountProd.innerHTML = 'In your basket ' + localStorage.length + ' goods.';
-   let modalWindow = document.querySelector('.modal');
-   modalWindow.style.overflow = 'hidden';
+   // let modalWindow = document.querySelector('.modal');
+   // modalWindow.style.overflow = 'hidden';
 }
 
 let confirmBlok = document.querySelector('.confirm');

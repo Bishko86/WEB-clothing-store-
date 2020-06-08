@@ -3,6 +3,9 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+title {
+	color:red;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -75,8 +78,6 @@ span.prise-prod {
 	
 }
 nav.nav {
-	/*display: flex;
-	justify-content: center;*/
 	background-color: #4ccfc1;
 	padding: 10px 0;
 	width: auto;
@@ -178,6 +179,7 @@ div.content {
 }
 div.title-block {
 	margin-top: 100px;
+	width: 330px;
 }
 
 h1.title {
@@ -187,9 +189,6 @@ h1.title {
 	line-height: 0.9;
 	color: white;
 	margin-top: 0;
-}
-div.title-block {
-	width: 330px;
 }
 
 a.foot-list,
@@ -442,7 +441,7 @@ img.img {
 div.confirm{
 	display: none;
 	position: fixed;
-	top:10%;
+	top: 10%;
 	margin: 0 30% auto 30%;
 	width: 40%;
 	min-height: 60%;
@@ -451,18 +450,18 @@ div.confirm{
 	text-align: center;
 	background-color: #fff;
 	z-index: 400000;
-	animation-name:increase;
-	animation-duration: 0.5s;
+	/*animation-name:increase;
+	animation-duration: 0.5s;*/
 }
-@keyframes increase {
-	from{width: 1%;}
-	to { width: 40%;}
+/*@keyframes increase {
+	from{top: 100px;}
+	to { top: 150px;}
 }
 @-webkit-keyframes increase {
-	from{width: 1%;}
-	to { width: 40%;}
+	from{top: 100px;}
+	to { top: 150px;}
 }
-
+*/
 
 
 p.namOfItem {
@@ -602,10 +601,10 @@ div.parent_block {
 	width: 80%;
 	margin:auto;
 }
-/*div.confirm{
-	width: 90%;
-	margin:auto;
-}*/
+div.confirm{
+	width: 80%;
+	margin:0 10% 0 10%;
+}
 }
 
 @media screen and (max-width: 970px) {
@@ -619,7 +618,7 @@ div.parent_block {
 	}
 	div.content {
 		display: flex;
-		min-width: 325px;
+		min-width: 250px;
 		margin: 65px 0 0;
 		
 	}
@@ -675,7 +674,9 @@ div.parent_block {
 		
 	}
 	div.adapt-basket {
-		margin-left: 5%;
+		display: flex;
+		flex-direction: row;
+		margin-left: 25px;
 		font-size: 36px;
 		color: #ffffff;
 	}
@@ -709,9 +710,9 @@ div.parent_block {
 	}
 }
 @media screen and (max-width: 500px) {
-	/*span.prise-prod {
-		display: none;
-	}*/
+	span.price-prod {
+		margin-left: 10px;
+	}
 	div.item {
 	width: 200px;
 }
